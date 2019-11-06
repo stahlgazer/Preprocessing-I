@@ -141,7 +141,7 @@ body a {
 }
 html h1,
 body h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 html h2,
 body h2 {
@@ -151,10 +151,20 @@ html p,
 body p {
   font-size: 1rem;
 }
+html h1,
+body h1,
+html h2,
+body h2,
+html p,
+body p {
+  padding: 2% 2%;
+  text-align: center;
+}
 .container {
-  width: 50%;
+  width: 65%;
   margin: 0 auto;
   background: #ebebeb;
+  border: 1px solid gray;
 }
 header nav {
   display: flex;
@@ -162,8 +172,11 @@ header nav {
   padding: 3%;
   border: 1px solid gray;
 }
+header nav a:hover {
+  color: black;
+}
 header img {
-  width: 45%;
+  width: 40%;
 }
 header .banner-section {
   display: flex;
@@ -171,17 +184,26 @@ header .banner-section {
   padding: 3%;
   border: 1px solid gray;
 }
-header h1,
-header h2,
-header p {
-  padding: 4% 2%;
-  text-align: center;
-}
 header .button {
-  border: 1px solid black;
-  padding: 2%;
+  border: 1px solid gray;
+  padding: 2% 2%;
   border-radius: 1rem;
 }
 header .button:hover {
   background: lightgray;
+}
+.skills-section {
+  border: 1px solid gray;
+  padding: 5%;
+}
+.contact-section {
+  border: 1px solid gray;
+  text-align: center;
+  padding: 5%;
+}
+footer {
+  border: 1px solid gray;
+}
+footer p {
+  font-size: 75%;
 }

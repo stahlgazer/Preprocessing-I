@@ -65,7 +65,7 @@ table {
 }
 
 .text-space(){
-	padding:4% 2%;
+	padding:2% 2%;
 	text-align:center;
 }
 
@@ -76,7 +76,7 @@ html, body {
 		color:@link-color;
 	}
 	h1 {
-		font-size:2rem;
+		font-size:2.5rem;
 	}
 	h2 {
 		font-size:1.5rem;
@@ -84,38 +84,58 @@ html, body {
 	p {
 		font-size:1rem;
 	}
+	h1, h2, p,{
+		.text-space();
+	}
 }
 
 .container {
-	width:50%;
+	width:65%;
 	margin:0 auto;
 	background:#ebebeb;
+	border:1px solid gray;
 }
 
 header {
 	nav{
 		.flex();
 	}
+	nav a:hover{
+		color:black;
+	}
 
 	img {
-		width:45%;
+		width:40%;
 	}
 
 	.banner-section{
 		.flex();
 	}
 
-	h1, h2, p,{
-		.text-space();
-	}
 	.button{
-		border:1px solid black;
-		padding:2%;
+		border:1px solid gray;
+		padding:2% 2%;
 		border-radius:1rem;
 	}
 	.button:hover{
 		background:lightgray;
 	}
-
 }
 
+.skills-section{
+	border:1px solid gray;
+	padding:5%;
+}
+
+.contact-section{
+	border:1px solid gray;
+	text-align:center;
+	padding:5%;
+}
+
+footer{
+	border:1px solid gray;
+	p{
+	font-size:75%;
+	}
+}
