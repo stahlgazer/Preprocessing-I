@@ -166,6 +166,22 @@ body p {
   background: #ebebeb;
   border: 1px solid gray;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 65%;
+  }
+}
+@media (max-width: 500px) {
+  .container .banner-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .container .banner-section img {
+    width: 100%;
+  }
+}
 header nav {
   display: flex;
   justify-content: space-around;
@@ -173,7 +189,7 @@ header nav {
   border: 1px solid gray;
 }
 header nav a:hover {
-  color: black;
+  color: #e9aae4;
 }
 header img {
   width: 40%;
@@ -194,12 +210,29 @@ header .button:hover {
 }
 .skills-section {
   border: 1px solid gray;
-  padding: 5%;
+  padding: 3%;
+}
+.skills-section h2 {
+  border-bottom: 1px solid gray;
+}
+.skills-section div p {
+  width: 50%;
+}
+.skills-section .history {
+  display: flex;
 }
 .contact-section {
   border: 1px solid gray;
   text-align: center;
-  padding: 5%;
+  padding-bottom: 2%;
+}
+.skills {
+  display: flex;
+  justify-content: space-around;
+  padding: 2%;
+}
+.skills h3 {
+  color: #446e75;
 }
 footer {
   border: 1px solid gray;

@@ -94,14 +94,31 @@ html, body {
 	margin:0 auto;
 	background:#ebebeb;
 	border:1px solid gray;
+	@media( max-width:500px ) {
+		width:65%;
+	}
+
+	.banner-section {
+		@media(max-width:500px){
+			display:flex;
+			flex-direction:column;
+		}
+	}
+
+	.banner-section img {
+		@media(max-width:500px){
+			width:100%;
+		}
+	}
 }
 
 header {
+
 	nav{
 		.flex();
 	}
 	nav a:hover{
-		color:black;
+		color:rgb(233, 170, 228);
 	}
 
 	img {
@@ -123,18 +140,42 @@ header {
 }
 
 .skills-section{
+	
 	border:1px solid gray;
-	padding:5%;
+	padding:3%;
+
+	h2 {
+		border-bottom:1px solid gray;
+	}
+
+	div p{
+		width:50%;
+	}
+	
+	.history {
+		display:flex;
+	}
 }
 
 .contact-section{
 	border:1px solid gray;
 	text-align:center;
-	padding:5%;
+	padding-bottom:2%;
+}
+
+.skills {
+	display:flex;
+	justify-content:space-around;
+	padding:2%;
+
+	h3 {
+		color:@link-color;
+	}
 }
 
 footer{
 	border:1px solid gray;
+
 	p{
 	font-size:75%;
 	}
